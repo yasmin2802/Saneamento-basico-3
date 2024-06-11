@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d0f0c0; /* Cor de fundo verde claro */
+  color: #006400; /* Cor do texto verde escuro */
+  position: relative; /* Adicionado */
+  min-height: 100vh; /* Adicionado */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px; /* Tamanho do título um pouco maior */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.section {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section:nth-child(even) {
+  flex-direction: row-reverse; /* Inverte a direção dos itens para seções pares */
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 32px; /* Tamanho do título um pouco maior */
+  color: #006400; /* Cor do texto verde escuro */
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: 170px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Manter proporções da imagem */
+
+} 
+
+
+.logo {
+  position: fixed; /* Fixa a logo */
+  top: 10px; /* Ajusta a posição conforme necessário */
+  left: 10px; /* Ajusta a posição conforme necessário */
+  z-index: 1001; /* Certifica-se de que a logo esteja acima do cabeçalho */
+}
+
+.logo img {
+  width: 100px; /* Ajusta o tamanho conforme necessário */
+  height: auto; /* /* Mantém a proporção da imagem */
+}
+  
